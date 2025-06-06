@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f9fafb;
+      padding: 40px;
+    }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #333;
+    }
+    .url {
+      font-size: 1.1em;
+      background: #eef1f4;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 15px 0;
+      font-family: monospace;
+    }
+    .password {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+    .video {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 Your MiniPass App is Ready!</h1>
+    <p>Welcome aboard! Your personalized MiniPass app is now live and ready to use.</p>
+
+    <div class="url">{{ url }}</div>
+    <p>Your admin password is: <span class="password">{{ password }}</span></p>
+
+    <p>👉 You can now log in and start managing your activities, passes, and customers!</p>
+
+    <div class="video">
+      <h3>🎬 Getting Started Guide</h3>
+      <p>Watch this short video to explore the basics:</p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" width="100%" style="border-radius: 8px;" />
+      </a>
+    </div>
+
+    <p style="margin-top: 40px; font-size: 0.9em; color: #888;">Questions? Reply to this email or visit our Help Center.</p>
+  </div>
+</body>
+</html>

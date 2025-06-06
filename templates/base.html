@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}MiniPass{% endblock %}</title>
+  <link href="https://unpkg.com/@tabler/core@1.0.0-beta20/dist/css/tabler.min.css" rel="stylesheet" />
+  <link rel="icon" href="https://tabler.io/favicon.svg" />
+</head>
+<body class="d-flex flex-column">
+  <div class="page">
+    <!-- Header (optional) -->
+    <header class="navbar navbar-expand-md d-print-none">
+      <div class="container-xl">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+          <strong>MiniPass</strong>
+        </a>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+  </div>
+
+  <script src="https://unpkg.com/@tabler/core@1.0.0-beta20/dist/js/tabler.min.js"></script>
+</body>
+</html>

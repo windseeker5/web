@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  flask-app:
+    container_name: minipass_juicymarie
+    build:
+      context: ./app
+    environment:
+      - FLASK_ENV=prod
+      - ADMIN_EMAIL=kdresdell@gmail.com
+      - ADMIN_PASSWORD=GdqFlCbS9S5tZi6_
+      - ORG_NAME=juicymarie
+      - VIRTUAL_HOST=juicymarie.minipass.me
+      - LETSENCRYPT_HOST=juicymarie.minipass.me
+      - LETSENCRYPT_EMAIL=info@minipass.me
+      - VIRTUAL_PORT=5000
+    expose:
+      - "5000"
+    restart: unless-stopped
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

@@ -1,0 +1,6 @@
+flask 
+flask-mail 
+stripe 
+python-dotenv 
+dotenv
+bcrypt
