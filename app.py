@@ -14,6 +14,8 @@ from utils.mail import mail
 import subprocess
 
 
+
+
 # ✅ Load environment variables
 load_dotenv()
 
@@ -29,15 +31,24 @@ STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY")
 init_mail(app)
 mail.init_app(app)
 
+
+
 # ✅ Footer year context
 @app.context_processor
 def inject_now():
     return {'now': datetime.now(timezone.utc)}
 
+
+
 # ✅ Homepage
 @app.route("/")
 def landing_page():
-    return render_template("index.html")
+    return render_template("hero.html")
+    #return render_template("index.html")
+
+
+
+
 
 # ✅ Handle form submit
 @app.route("/start-checkout", methods=["POST"])
@@ -99,7 +110,6 @@ def deployment_in_progress():
 
 
 
-# ✅ Webhook listener
 # ✅ Webhook listener
 @app.route("/webhook", methods=["POST"])
 def stripe_webhook():
