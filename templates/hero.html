@@ -1,35 +1,29 @@
 <!doctype html>
-
-
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Minipass</title>
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <!-- END PAGE LEVEL STYLES -->
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
 
 
-<!-- Base Tabler styles -->
-<link href="{{ url_for('static', filename='css/tabler.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/tabler-flags.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/tabler-socials.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/tabler-payments.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/tabler-vendors.min.css') }}" rel="stylesheet">
+    <!-- Base Tabler styles -->
+    <link href="{{ url_for('static', filename='css/tabler.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tabler-flags.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tabler-socials.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tabler-payments.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tabler-vendors.min.css') }}" rel="stylesheet">
 
-<!-- ✅ Tabler Marketing (this controls spacing and hero layout) -->
-<link href="{{ url_for('static', filename='css/tabler-marketing.min.css') }}" rel="stylesheet">
+    <!-- ✅ Tabler Marketing (this controls spacing and hero layout) -->
+    <link href="{{ url_for('static', filename='css/tabler-marketing.min.css') }}" rel="stylesheet">
 
-<!-- Demo overrides -->
-<link href="{{ url_for('static', filename='css/demo.min.css') }}" rel="stylesheet">
+    <!-- Demo overrides -->
+    <link href="{{ url_for('static', filename='css/demo.min.css') }}" rel="stylesheet">
 
-<!-- Custom font (Inter) -->
-<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <!-- Custom font (Inter) -->
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 
-        
-        
         
     
     <header class="navbar navbar-expand-lg navbar-transparent py-3">
@@ -76,9 +70,6 @@
             <div class="nav-item">
               <a class="nav-link" href="../marketing/about.html"><span class="nav-link-title">About</span></a>
             </div>
-            <div class="nav-item">
-              <a class="nav-link" href="../marketing/text.html"><span class="nav-link-title">Text</span></a>
-            </div>
 
             <div class="nav-item ms-4">
               <a href="#" class="btn btn-primary">Buy now</a>
@@ -90,6 +81,10 @@
     </header>
 
 
+
+
+
+    <!-- MY HERO SECTION -->
     <header class="hero">
       <div class="container">
         <div class="row g-8 align-items-center">
@@ -105,7 +100,6 @@
             <div class="mt-6 mt-lg-7">
               <div class="row justify-content-center justify-content-md-start">
                 <div class="col-auto"><a href="#" class="btn btn-lg btn-primary">Buy for $29</a></div>
-                <div class="col-auto"><a href="#" class="btn btn-lg">Browse gallery</a></div>
               </div>
             </div>
           </div>
@@ -295,7 +289,9 @@
                           .tblr-illustrations-boy-girl-a {
                             fill: black;
                             opacity: 0.07;
-                          }
+                            <!-- BEGIN PAGE LEVEL STYLES -->
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->  }
                           .tblr-illustrations-boy-girl-b {
                             fill: #1a2030;
                           }
@@ -702,17 +698,25 @@
     </header>
 
 
+
+
+    <!-- OUR CUSTOMERS LOGO -->
     <section class="section section-light mt-4 pt-4">
+
       <svg class="section-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
         <path class="wave-1" d="M-110 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         <path class="wave-2" d="M-110 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         <path class="wave-3" d="M-110 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </svg>
+
       <div class="container">
         <div class="section-header mb-6">
-          <h2 class="section-title text-muted">Trusted by over 3,000 companies</h2>
+          <h2 class="section-title text-muted">Trusted by</h2>
         </div>
+
+
         <div class="row g-8 align-items-center justify-content-center">
+          
           <div class="col-auto">
             <a href="#" class="link-muted"
               ><svg width="188" height="28" xmlns="http://www.w3.org/2000/svg">
@@ -723,6 +727,7 @@
                 /></svg
             ></a>
           </div>
+          
           <div class="col-auto">
             <a href="#" class="link-muted"
               ><svg width="57" height="27" xmlns="http://www.w3.org/2000/svg">
@@ -733,6 +738,7 @@
                 /></svg
             ></a>
           </div>
+          
           <div class="col-auto">
             <a href="#" class="link-muted"
               ><svg width="157" height="28" xmlns="http://www.w3.org/2000/svg">
@@ -743,6 +749,7 @@
                 /></svg
             ></a>
           </div>
+          
           <div class="col-auto">
             <a href="#" class="link-muted"
               ><svg width="106" height="28" xmlns="http://www.w3.org/2000/svg">
@@ -760,718 +767,307 @@
                 </g></svg
             ></a>
           </div>
-          <div class="col-auto">
-            <a href="#" class="link-muted"
-              ><svg width="89" height="30" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M77.3 1.897l-1.73 7.15-2.18.023 1.663-7.15-2.495.047L73.075 0l9.462.023.539 6.155L86.267.023h2.338l-5.147 9.024-1.978.023L80.244.278l.25 1.596-3.194.023zM.135 12.617l1.08-5.338 3.014.068C5.143 1.537 8.937-.69 15.408.184l-.99 5.315-2.429-.046c-1.202.047-1.845.714-2.024 1.894l3.149-.02-.99 5.27-3.217.045-3.261 16.837-5.646.02 3.217-16.905-3.082.023zm14.828-5.521H20.9L18.63 18.959c-.45 2.51-.922 5.293 2.025 5.818.817.119 1.658 0 2.454-.377 2.398-1.14 2.982-3.552 3.467-5.972l2.266-11.31 5.691-.02-4.364 22.243-5.218.069.225-1.095c-3.47 2.32-7.691 2.01-10.21.324-2.446-1.75-3.003-4.813-2.39-8.69l2.388-12.853zM32.099 29.41L37.677.213l5.601.02-1.507 7.849c2.84-1.787 6.951-1.676 9.874-.152 1.35.703 2.67 1.892 3.485 3.195 1.185 1.896 1.443 4.24 1.487 7.497.186 3.262 2.24 6.399 6.082 5.796 2.182-.342 3.909-1.465 4.855-3.539 1.221-2.675.767-6.073-.86-7.527-1.897-1.704-5.953-2.038-8.053.775-.403-1.933-.976-3.762-2.249-5.361 5.056-3.936 13.239-2.58 16.248 2.975 1.817 3.355 1.696 7.819-.036 11.435-1.457 3.04-4.096 5.384-7.308 6.33-2.734.807-5.688.604-8.107-.453-2.009-.878-3.898-2.596-4.856-4.62-1.609-3.399.24-6.556-2.06-10.351-1.366-1.837-4.15-2.441-6.471-1.496-1.962.798-3.305 2.635-3.739 4.71-.48 2.296-.002 4.946 1.843 6.276 1.964 1.537 5.773 1.225 7.715-1.346.244 1.99.881 3.845 2.385 5.407-2.73 2.472-10.565 3.711-13.991-.045l-.338 1.802-5.578.02z"
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                /></svg
-            ></a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="link-muted"
-              ><svg width="94" height="41" xmlns="http://www.w3.org/2000/svg">
-                <g fill-rule="nonzero" fill="none">
-                  <path d="M14.137 29.518L18.564 4.83 3.353 3.353 5.51 30.17l8.627-.652zM4.922 41l-1.071-8.922 14.796 3.245L4.922 41z" fill="currentColor" />
-                  <path
-                    d="M1 5.611l5.593 29.507.524-.191L2.733 8.933l5.017-1.22L1 5.61h0zM8.117 1l1.936 33.322.58.208L9.508 4.326l5.61-1.229L8.117 1h0z"
-                    stroke="currentColor"
-                    stroke-width=".515"
-                    fill="#FFF"
-                  />
-                  <path stroke="currentColor" stroke-width=".515" fill="#FFF" d="M11.85 8.059l-.262 26.85.624.209.79-23.725 5.645-1.22z" />
-                  <path
-                    d="M15.76 13.95l-1.563 20.985.546.183 1.698-17.771L21 16.113l-5.24-2.163h0zM1 18.749l4.278 16.35.511-.205-3.068-12.763 3.696-1.221L1 18.749h0zm4.793-8.337l2.929 23.396.566-.205-2.06-19.805 4.672-1.235-6.107-2.151h0z"
-                    stroke="currentColor"
-                    stroke-width=".515"
-                    fill="#FFF"
-                  />
-                  <path
-                    d="M32.31 13.477c-1.252-1.05-2.949-1.658-4.664-1.658-2.693 0-5.538 1.595-5.733 4.448-.352 5.163 6.406 3.82 6.253 6.066-.063.923-1.282 1.28-2.042 1.28-1.107 0-2.08-.378-2.723-1.155L21 25.186c1.331 1.176 3.206 1.7 5.053 1.7 3.105 0 5.819-1.574 6.039-4.806.361-5.288-6.408-3.798-6.251-6.085.052-.756 1.055-1.134 1.705-1.134 1.151 0 1.777.378 2.576 1.092l2.189-2.476zm4.423 2.421l-3.351-.008-.74 10.828 3.351.01.74-10.83zm-.293 10.86h4.022l2.383-3.208 1.758 3.208h3.932l-3.538-5.79 4.118-5.055h-3.842l-1.958 2.664-1.483-2.664H38.02l3.16 5.013-4.74 5.832zm-3.104-11.423l.32-3.312 4.929 1.659-5.249 1.653zm20.12.094h5.06l-.667-3.275h-7.86l-1.007 14.604h3.723l.333-5.202h3.67l.207-3.043h-3.67l.21-3.084zm5.928-3.505l-1.019 14.834h3.396l1.034-15.17-3.411.336zM65.61 22.94c.06-.881.857-1.406 1.79-1.406.913 0 1.637.525 1.576 1.406-.061.903-.858 1.428-1.77 1.428-.933 0-1.658-.525-1.596-1.428zm-1.43-4.176c.939-.399 1.977-.65 2.976-.65 1.455 0 2.15.314 2.048 1.804-.009.126-.014.231-.045.336a4.336 4.336 0 0 0-2.462-.819c-2.15 0-4.09 1.364-4.238 3.546-.158 2.309 1.102 3.904 3.62 3.904 1.152 0 2.148-.273 2.865-1.238h.044l-.138 1.11h3.01l.524-7.595c.182-2.665-1.654-3.777-4.434-3.777-.934 0-2.207.19-3.095.483l-.676 2.896zm20.415-3.798c-1.28.293-2.545.693-3.845.65-.996-.042-1.852-.23-2.482-.23-2.823 0-5.21 1.889-5.404 4.721-.1 1.49.844 2.918 2.168 3.547l-.329 1.007c.977-.293 1.684-.482 2.704-.482 1.217 0 2.419.524 2.334 1.762-.085 1.26-1.509 1.743-2.638 1.743-1.151 0-2.077-.441-2.849-1.218l-2.067 1.973c1.233 1.342 2.927 1.972 4.838 1.972 2.54 0 5.878-1.175 6.071-3.987.11-1.616-.504-2.476-1.816-3.316 1.259-.61 1.96-1.679 2.047-2.938.104-1.532-.475-1.952-.64-2.393l1.07-.105.838-2.706zm-8.538 5.12c.078-1.154 1.134-1.972 2.176-1.972 1.043 0 1.986.819 1.906 1.972-.08 1.176-1.134 1.994-2.176 1.994-1.043 0-1.986-.819-1.906-1.994zm7.323 5.33c1.422 1.113 2.462 1.47 4.351 1.47 2.194 0 4.473-1.26 4.636-3.631.306-4.491-5.03-2.686-4.906-4.491.038-.567.783-.65 1.196-.65.629 0 1.285.251 1.738.608l1.992-1.826c-.917-.88-2.263-1.51-3.61-1.51-2.215 0-4.31 1.112-4.476 3.525-.299 4.385 5.014 2.895 4.914 4.385-.054.777-1.016.861-1.58.861-.955 0-1.758-.336-2.386-.986l-1.87 2.246zm8.218-10.207c0 .713.552 1.172 1.171 1.172.62 0 1.171-.46 1.171-1.172 0-.71-.552-1.167-1.17-1.167-.62 0-1.172.457-1.172 1.167zm.31 0c0-.532.382-.916.861-.916.473 0 .86.384.86.916 0 .535-.387.922-.86.922-.479 0-.86-.387-.86-.922zm.406.653h.254v-.56h.158l.311.56h.266l-.342-.572c.189-.016.336-.11.336-.35 0-.285-.18-.388-.5-.388h-.482v1.31zm.254-1.107h.213c.116 0 .262.022.262.163 0 .16-.107.181-.25.181h-.226v-.344z"
-                    fill="currentColor"
-                  />
-                </g></svg
-            ></a>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="link-muted"
-              ><svg width="91" height="30" xmlns="http://www.w3.org/2000/svg">
-                <g fill="currentColor" fill-rule="evenodd">
-                  <path
-                    d="M51.763 1.603c-5.486 0-9.935 4.521-9.935 10.061 0 2.638 1.051 5.138 2.956 7.02 1.89 1.868 4.373 2.902 6.994 2.902 2.011 0 4.023-.679 5.7-1.898l.167-.124v-3.719l-.67.68c-1.479 1.496-3.383 2.345-5.258 2.345-3.825 0-7.04-3.333-7.04-7.283s3.2-7.284 6.994-7.284c1.95 0 3.886.849 5.303 2.346l.67.71V3.624l-.151-.123c-1.723-1.281-3.582-1.898-5.73-1.898zM72.075 13.376v.279c0 1.342.015 2.731-.808 3.718-.746.91-2.041 1.512-3.291 1.512-1.31 0-2.712-.663-3.383-1.604-.731-1.019-.731-2.376-.731-3.689V1.927h-2.82v12.005c0 2.007.153 3.935 1.921 5.648 1.265 1.265 3.138 2.006 5.013 2.006 2.012 0 3.916-.818 5.212-2.238 1.584-1.666 1.706-3.44 1.706-5.416V1.927h-2.819v11.45zM85.56 9.89l-1.219-.54c-1.173-.54-2.62-1.204-2.62-2.531 0-1.39 1.158-2.485 2.65-2.485 1.281 0 2.074.51 2.82 1.82l.198.356 2.286-1.482-.168-.324c-1.051-1.959-2.895-3.085-5.09-3.085-3.138 0-5.516 2.206-5.516 5.122 0 2.932 2.088 4.136 4.221 5.108l1.113.494.09.046c1.647.756 3.064 1.42 3.064 3.287 0 1.774-1.509 3.225-3.367 3.225-1.677 0-3.017-1.28-3.277-3.102l-.06-.447-2.774.787.076.355c.625 3.101 3.018 5.123 6.095 5.123 3.444 0 6.156-2.7 6.156-6.126-.046-3.271-2.33-4.568-4.678-5.602zM8 15.352L3.047 1.927H0l8 21.171 8.015-21.171h-3.063zM28.937 22.296a1.43 1.43 0 0 1 1.066-1.698 1.41 1.41 0 0 1 1.676 1.08 1.43 1.43 0 0 1-1.066 1.698c-.107.015-.199.03-.305.03a1.391 1.391 0 0 1-1.371-1.11zM25.34 23.268a1.348 1.348 0 0 1-.99-1.62 1.328 1.328 0 0 1 1.6-1.003 1.347 1.347 0 0 1-.305 2.654c-.091 0-.198-.016-.305-.03zM33.34 20.892c-.503-.649-.396-1.605.244-2.115.64-.509 1.585-.4 2.087.247.504.648.397 1.605-.243 2.114a1.48 1.48 0 0 1-.93.325c-.426 0-.853-.186-1.158-.571zM20.678 20.845a1.3 1.3 0 0 1-.183-1.79 1.26 1.26 0 0 1 1.768-.185 1.3 1.3 0 0 1 .183 1.79c-.244.309-.61.463-.976.463-.274 0-.563-.093-.792-.278zM36.753 17.713a1.604 1.604 0 0 1-.73-2.114 1.567 1.567 0 0 1 2.087-.741 1.604 1.604 0 0 1 .73 2.114 1.554 1.554 0 0 1-1.416.895c-.229 0-.457-.046-.67-.154zM17.539 16.632c-.274-.601-.016-1.311.563-1.574a1.165 1.165 0 0 1 1.555.571c.274.602.015 1.312-.564 1.574a1.175 1.175 0 0 1-.503.108c-.426.016-.838-.231-1.051-.679zM36.83 11.68c0 .92.737 1.666 1.646 1.666.908 0 1.645-.747 1.645-1.667s-.737-1.666-1.645-1.666c-.909 0-1.646.746-1.646 1.666zM17.63 12.636a1.11 1.11 0 0 1-1.081-1.126 1.108 1.108 0 0 1 1.112-1.096 1.11 1.11 0 0 1 1.082 1.127c-.016.601-.503 1.095-1.098 1.095h-.015zM36.144 8.022c-.35-.802 0-1.744.792-2.098.793-.355 1.723 0 2.073.802.35.802 0 1.744-.792 2.099a1.598 1.598 0 0 1-.64.139c-.61 0-1.174-.355-1.433-.942zM18.224 8.007c-.579-.293-.807-1.019-.518-1.605a1.177 1.177 0 0 1 1.585-.525c.579.293.808 1.019.518 1.605a1.177 1.177 0 0 1-1.051.648c-.183 0-.366-.046-.534-.123zM33.798 4.766a1.526 1.526 0 0 1-.183-2.129 1.481 1.481 0 0 1 2.102-.186c.625.541.716 1.482.183 2.13-.29.355-.716.54-1.142.54a1.54 1.54 0 0 1-.96-.355zM20.724 4.087a1.267 1.267 0 0 1 .228-1.774 1.231 1.231 0 0 1 1.753.232c.426.555.32 1.357-.23 1.774a1.27 1.27 0 0 1-.761.262c-.366 0-.747-.17-.99-.494zM30.263 2.837c-.748-.2-1.22-.971-1.022-1.728A1.392 1.392 0 0 1 30.948.075a1.412 1.412 0 0 1 1.02 1.728 1.418 1.418 0 0 1-1.37 1.081 1.43 1.43 0 0 1-.335-.047zM24.655 1.619A1.35 1.35 0 0 1 25.69.029c.716-.155 1.417.324 1.57 1.05a1.349 1.349 0 0 1-1.037 1.588c-.091.016-.182.031-.274.031-.61 0-1.173-.447-1.295-1.08zM43.534 29.81c-.899 0-1.569-.709-1.569-2.006 0-1.295.716-1.99 1.57-1.99.472 0 .761.14.929.278l-.228.617a.671.671 0 0 0-.458-.154c-.487 0-.7.447-.7 1.234 0 .787.259 1.234.7 1.234a.682.682 0 0 0 .458-.153l.228.679c-.168.153-.457.261-.93.261zM46.354 29.81c-1.098 0-1.677-.848-1.677-2.006 0-1.156.58-1.99 1.677-1.99 1.112 0 1.691.849 1.691 1.99 0 1.158-.58 2.006-1.691 2.006zm0-3.301c-.488 0-.58.601-.58 1.295 0 .695.107 1.266.58 1.266.487 0 .594-.571.594-1.266 0-.694-.107-1.295-.594-1.295zM52.769 29.749v-2.7c0-.293-.168-.525-.549-.525a.685.685 0 0 0-.487.185v3.04h-1.098v-2.716c0-.308-.213-.509-.594-.509-.198 0-.305.015-.442.077v3.163h-1.097v-3.641c.426-.2.884-.293 1.539-.293.625 0 .99.169 1.204.385.243-.2.625-.385 1.265-.385.899 0 1.371.54 1.371 1.219v2.7H52.77zM58.726 29.749v-2.7c0-.293-.167-.525-.548-.525a.687.687 0 0 0-.488.185v3.04h-1.096v-2.716c0-.308-.214-.509-.595-.509-.198 0-.305.015-.442.077v3.163H54.46v-3.641c.427-.2.884-.293 1.539-.293.625 0 .99.169 1.204.385.244-.2.624-.385 1.264-.385.9 0 1.372.54 1.372 1.219v2.7h-1.113zM62.003 29.81c-1.082 0-1.6-.4-1.6-1.342v-2.592H61.5v2.67c0 .277.152.508.518.508a.966.966 0 0 0 .457-.092v-3.086h1.097v3.626c-.32.2-.853.308-1.57.308zM66.315 29.749v-2.7c0-.279-.122-.54-.564-.54-.213 0-.335.03-.472.077v3.163h-1.097v-3.642c.38-.17.914-.293 1.6-.293 1.204 0 1.646.525 1.646 1.219v2.7h-1.113v.016zM68.595 25.305c-.333 0-.62-.231-.62-.525 0-.293.27-.524.62-.524.333 0 .618.231.618.524 0 .294-.285.525-.618.525zM68.023 29.749v-3.858h1.143v3.858zM71.16 29.81c-.898 0-1.569-.709-1.569-2.006 0-1.295.717-1.99 1.57-1.99.472 0 .762.14.93.278l-.23.617a.671.671 0 0 0-.457-.154c-.487 0-.7.447-.7 1.234 0 .787.258 1.234.7 1.234.199 0 .35-.061.458-.153l.228.679c-.152.153-.442.261-.93.261zM73.934 29.81c-1.097 0-1.661-.416-1.661-1.219 0-1.002.975-1.295 2.133-1.388v-.185c0-.401-.274-.51-.67-.51-.366 0-.747.124-.99.232l-.244-.633a3.748 3.748 0 0 1 1.432-.293c.869 0 1.494.37 1.494 1.404v2.3c-.321.184-.839.292-1.494.292z"
-                  />
-                  <path
-                    d="M74.39 27.728c-.67.061-1.096.216-1.096.833 0 .448.26.648.686.648a.9.9 0 0 0 .396-.078v-1.403h.015zM77.377 29.81c-.792 0-1.142-.524-1.142-1.11v-2.083h-.411v-.726h.41v-.817l1.098-.294v1.111h.594v.726h-.594v1.99c0 .294.107.447.35.447.092 0 .138-.015.23-.045v.693a1.413 1.413 0 0 1-.535.108zM78.926 25.305c-.333 0-.618-.231-.618-.525 0-.293.269-.524.618-.524.333 0 .619.231.619.524-.016.294-.286.525-.62.525zM78.34 29.749v-3.858h1.141v3.858zM81.598 29.81c-1.096 0-1.675-.848-1.675-2.006 0-1.156.579-1.99 1.675-1.99 1.113 0 1.692.849 1.692 1.99-.015 1.158-.594 2.006-1.692 2.006zm0-3.301c-.487 0-.579.601-.579 1.295 0 .695.107 1.266.58 1.266.487 0 .594-.571.594-1.266-.015-.694-.107-1.295-.595-1.295zM85.865 29.749v-2.7c0-.279-.122-.54-.564-.54-.213 0-.335.03-.472.077v3.163h-1.097v-3.642c.38-.17.914-.293 1.6-.293 1.204 0 1.646.525 1.646 1.219v2.7h-1.113v.016zM88.44 29.81c-.472 0-.883-.122-1.112-.277l.29-.71c.137.108.396.216.685.216.29 0 .473-.185.473-.416 0-.263-.137-.401-.488-.54-.7-.279-.853-.68-.853-1.081 0-.663.502-1.188 1.28-1.188.472 0 .792.093 1.097.278l-.274.633a.958.958 0 0 0-.58-.2c-.289 0-.441.184-.441.4 0 .263.198.402.487.524.731.31.9.68.9 1.127-.016.694-.565 1.234-1.464 1.234z"
-                  />
-                </g></svg
-            ></a>
-          </div>
+          
+
+          
+
+
+
+
+
+
         </div>
+
+
       </div>
     </section>
-    <section class="section">
+
+
+
+
+
+
+
+
+
+
+
+    <!-- OUR PRICING TABLE -->
+
+    <section class="section pt-0">
       <div class="container">
-        <div class="row items-center text-center g-lg-10">
-          <div class="col-md-6 col-lg">
-            <div class="shape shape-md mb-3">
-              <!-- Download SVG icon from http://tabler.io/icons/icon/devices -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-1"
-              >
-                <path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10z" />
-                <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                <path d="M16 9h2" />
-              </svg>
+        <div class="pricing">
+          <div class="pricing-card">
+            <h4 class="pricing-title">Free</h4>
+            <div class="pricing-price">
+              <span class="pricing-price-currency">$</span>99
+              <div class="pricing-price-description">
+                <div>per user</div>
+                <div>per year</div>
+              </div>
             </div>
-            <h2 class="h2">Mobile-optimized</h2>
-            <p class="text-muted">Our email templates are fully responsive, so you can be sure they will look great on any device and screen size.</p>
+            <ul class="pricing-features my-5">
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Up to 5 developers
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                All marketing + app components
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Figma UI Kit
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Lifetime free updates
+              </li>
+            </ul>
+            <div class="pricing-btn"><a href="#" class="btn w-100">Get started</a></div>
           </div>
-          <div class="col-md-6 col-lg">
-            <div class="shape shape-md mb-3">
-              <!-- Download SVG icon from http://tabler.io/icons/icon/mailbox -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-1"
-              >
-                <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
-                <path d="M12 11v-8h4l2 2l-2 2h-4" />
-                <path d="M6 15h1" />
-              </svg>
+          <div class="pricing-card featured">
+            <div class="pricing-label"><div class="badge bg-primary text-primary-fg">Popular</div></div>
+            <h4 class="pricing-title">All features</h4>
+            <div class="pricing-price">
+              <span class="pricing-price-currency">$</span>199
+              <div class="pricing-price-description">
+                <div>per user</div>
+                <div>per year</div>
+              </div>
             </div>
-            <h2 class="h2">Compatible with 90+ email clients</h2>
-            <p class="text-muted">
-              Tested across 90+ email clients and devices, Tabler emails will help you make your email communication professional and reliable.
-            </p>
+            <ul class="pricing-features my-5">
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Up to 5 developers
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                All marketing + app components
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Figma UI Kit
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Lifetime free updates
+              </li>
+            </ul>
+            <div class="pricing-btn"><a href="#" class="btn w-100 btn-primary">Get started</a></div>
           </div>
-          <div class="col-md-6 col-lg">
-            <div class="shape shape-md mb-3">
-              <!-- Download SVG icon from http://tabler.io/icons/icon/palette -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-1"
-              >
-                <path
-                  d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
-                />
-                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-              </svg>
+          <div class="pricing-card">
+            <h4 class="pricing-title">Other</h4>
+            <div class="pricing-price">
+              <span class="pricing-price-currency">$</span>99
+              <div class="pricing-price-description">
+                <div>per user</div>
+                <div>per year</div>
+              </div>
             </div>
-            <h2 class="h2">Unique, minimal design</h2>
-            <p class="text-muted">Draw recipients’ attention with beautiful, minimal email designs based on Bootstrap and Material Design principles.</p>
+            <ul class="pricing-features my-5">
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Up to 5 developers
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                All marketing + app components
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Figma UI Kit
+              </li>
+              <li>
+                <!-- Download SVG icon from http://tabler.io/icons/icon/check -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-inline me-1 text-green icon-3"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Lifetime free updates
+              </li>
+            </ul>
+            <div class="pricing-btn"><a href="#" class="btn w-100">Get started</a></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-light">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Everything you need to deploy your app</h2>
-          <div class="section-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-        </div>
-        <div class="row g-10">
-          <div class="col-lg-6 mb-3 mb-lg-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              width="500"
-              height="400"
-              viewBox="0 0 500 400"
-              fill="transparent"
-              stroke="var(--tblr-border-color, #b8cef1)"
-              style="width: 100%; height: auto"
-            >
-              <rect x=".5" y=".5" width="499" height="399" rx="2"></rect>
-              <line x1="0" y1="0" x2="500" y2="400"></line>
-              <line x1="0" y1="400" x2="500" y2="0"></line>
-            </svg>
-          </div>
-          <div class="col-lg-6">
-            <div class="space-y-6">
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/tools -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
-                        <path d="M14.5 5.5l4 4" />
-                        <path d="M12 8l-5 -5l-4 4l5 5" />
-                        <path d="M7 8l-1.5 1.5" />
-                        <path d="M16 12l5 5l-4 4l-5 -5" />
-                        <path d="M16 17l-1.5 1.5" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Designed with users in mind</h3>
-                    <p class="text-muted m-0">
-                      Tabler is fully responsive and compatible with all modern browsers. Thanks to its modern, user-friendly design you can create a fully
-                      functional interface that users will love. Every UI element has been created with attention to detail to make your interface beautiful!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/brand-bootstrap -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
-                        <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
-                        <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Built for developers</h3>
-                    <p class="text-muted m-0">
-                      Having in mind what it takes to write high-quality code, we want to help you speed up the development process and keep your code clean.
-                      Based on Bootstrap 5, Tabler is a cutting-edge solution, compatible with all modern browsers and fully responsive.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/paint -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
-                        <path d="M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1 -5 5l-5 0v2" />
-                        <path d="M10 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Fully customizable</h3>
-                    <p class="text-muted m-0">
-                      You can easily customize the UI elements to make them fit the needs of your project. And don’t worry if you don’t have much experience -
-                      Tabler is easy to get started!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container-narrow text-center">
-        <h3 class="h1">Enhance your efficiency with our application,<br />available for use immediately.</h3>
-        <p class="text-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa? Voluptates sunt, ipsum esse quis obcaecati atque placeat consectetur beatae,
-          tenetur ducimus iure minima expedita recusandae doloribus nam. Pariatur, facilis?
-        </p>
-        <div class="btn-list justify-content-center mt-6">
-          <a href="#" class="btn btn-primary btn-2"> Get started </a>
-          <a href="#" class="btn btn-3">
-            Learn more
-            <!-- Download SVG icon from http://tabler.io/icons/icon/chevron-right -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-right icon-2"
-            >
-              <path d="M9 6l6 6l-6 6" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="section section-light">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Everything you need to deploy your app</h2>
-          <div class="section-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-        </div>
-        <div class="row g-10">
-          <div class="col-lg-6">
-            <div class="space-y-6">
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/tools -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
-                        <path d="M14.5 5.5l4 4" />
-                        <path d="M12 8l-5 -5l-4 4l5 5" />
-                        <path d="M7 8l-1.5 1.5" />
-                        <path d="M16 12l5 5l-4 4l-5 -5" />
-                        <path d="M16 17l-1.5 1.5" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Designed with users in mind</h3>
-                    <p class="text-muted m-0">
-                      Tabler is fully responsive and compatible with all modern browsers. Thanks to its modern, user-friendly design you can create a fully
-                      functional interface that users will love. Every UI element has been created with attention to detail to make your interface beautiful!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/brand-bootstrap -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
-                        <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
-                        <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Built for developers</h3>
-                    <p class="text-muted m-0">
-                      Having in mind what it takes to write high-quality code, we want to help you speed up the development process and keep your code clean.
-                      Based on Bootstrap 5, Tabler is a cutting-edge solution, compatible with all modern browsers and fully responsive.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="shape shape-md">
-                      <!-- Download SVG icon from http://tabler.io/icons/icon/paint -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="icon icon-1"
-                      >
-                        <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
-                        <path d="M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1 -5 5l-5 0v2" />
-                        <path d="M10 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="h2 mb-2">Fully customizable</h3>
-                    <p class="text-muted m-0">
-                      You can easily customize the UI elements to make them fit the needs of your project. And don’t worry if you don’t have much experience -
-                      Tabler is easy to get started!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-3 mt-lg-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              width="500"
-              height="400"
-              viewBox="0 0 500 400"
-              fill="transparent"
-              stroke="var(--tblr-border-color, #b8cef1)"
-              style="width: 100%; height: auto"
-            >
-              <rect x=".5" y=".5" width="499" height="399" rx="2"></rect>
-              <line x1="0" y1="0" x2="500" y2="400"></line>
-              <line x1="0" y1="400" x2="500" y2="0"></line>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Trusted by hundreds</h2>
-          <p class="section-description">Our Users send us bunch of smilies with our services, and we love them 😍</p>
-        </div>
-        <div class="row g-6">
-          <div class="col-md-6 col-lg-4">
-            <div class="row g-6">
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md">JL</span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Jeffie Lewzey</h3>
-                        <div class="text-secondary">Chemical Engineer</div>
-                      </div>
-                    </div>
-                    <p>
-                      Ever since I started using Tabler, my HTML designing process has been significantly smoother. Its intuitive interface is a breath of fresh
-                      air!
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/002m.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Mallory Hulme</h3>
-                        <div class="text-secondary">Geologist IV</div>
-                      </div>
-                    </div>
-                    <p>
-                      I'm beyond impressed with Tabler. This UI kit has transformed my workflow for the better. It's easy to use, streamlined, and remarkably
-                      efficient.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/003m.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Dunn Slane</h3>
-                        <div class="text-secondary">Research Nurse</div>
-                      </div>
-                    </div>
-                    <p>
-                      Tabler's feature-rich package has drastically improved my website design process. It's an absolute game-changer in the UI kit landscape.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="row g-6">
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/000f.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Emmy Levet</h3>
-                        <div class="text-secondary">VP Product Management</div>
-                      </div>
-                    </div>
-                    <p>
-                      Having used many UI kits in the past, I can confidently say that Tabler stands out. The level of customization it offers is unparalleled.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/001f.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Maryjo Lebarree</h3>
-                        <div class="text-secondary">Civil Engineer</div>
-                      </div>
-                    </div>
-                    <p>What I love about Tabler is its sleek design and ease of use. It's really simplified my HTML designing work. Five stars from me!</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md">EP</span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Egan Poetz</h3>
-                        <div class="text-secondary">Research Nurse</div>
-                      </div>
-                    </div>
-                    <p>
-                      I'd recommend Tabler to anyone, whether they're a seasoned pro or a beginner in HTML design. Its versatility and user-friendly nature make
-                      it a cut above the rest.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="row g-6">
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/002f.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Kellie Skingley</h3>
-                        <div class="text-secondary">Teacher</div>
-                      </div>
-                    </div>
-                    <p>
-                      Navigating through Tabler has been a breeze! Its intuitive layout helps me save time and focus more on the creative aspect of my work.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md" style="background-image: url(../static/avatars/003f.jpg)"></span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Christabel Charlwood</h3>
-                        <div class="text-secondary">Tax Accountant</div>
-                      </div>
-                    </div>
-                    <p>
-                      With Tabler, designing HTML has never been more straightforward. The kit's sleek features and functionalities have taken my design work to
-                      new heights.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a href="#" class="card bg-body">
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto">
-                        <span class="avatar avatar-md">HS</span>
-                      </div>
-                      <div class="col">
-                        <h3 class="h3 m-0">Haskel Shelper</h3>
-                        <div class="text-secondary">Staff Scientist</div>
-                      </div>
-                    </div>
-                    <p>
-                      Tabler has revolutionized the way I approach HTML design. Its array of tools and efficient interface make it a must-have for any designer.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-light">
-      <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-sm-6 col-lg-3">
-            <div class="text-center">
-              <h2 class="display-5 m-0 fw-bold">48</h2>
-              <p class="text-secondary m-0">templates</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="text-center">
-              <h2 class="display-5 m-0 fw-bold">12</h2>
-              <p class="text-secondary m-0">years in business</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="text-center">
-              <h2 class="display-5 m-0 fw-bold">2,5k+</h2>
-              <p class="text-secondary m-0">copies sold</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="text-center">
-              <h2 class="display-5 m-0 fw-bold">99%</h2>
-              <p class="text-secondary m-0">happy customers</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-header mb-6">
-          <h2 class="section-title">Subscribe on our newsletter</h2>
-          <p class="section-description">Get daily news on upcoming offers from many suppliers all over the world</p>
-        </div>
-      </div>
-      <div class="container-tight">
-        <div class="row">
-          <div class="col">
-            <input class="w-100 form-control" placeholder="Your Email" type="email" />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary">
-              <!-- Download SVG icon from http://tabler.io/icons/icon/mail -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-1"
-              >
-                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                <path d="M3 7l9 6l9 -6" />
-              </svg>
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-light">
-      <div class="container">
-        <div class="row g-xl-6">
-          <div class="col-lg-4">
-            <div class="section-header text-start sticky-top">
-              <div class="section-title">Frequently asked questions</div>
-              <p class="section-description">Can’t find the answer you’re looking for? Reach out to our customer support team.</p>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="space-y-5">
-              <div>
-                <div class="h3 mb-1">Can I use Tabler in commercial projects?</div>
-                <div class="text-muted">
-                  Of course! Tabler is under MIT license, so you can confidently use it in commercial projects. However, remember to include a note that your
-                  project uses Tabler.
-                </div>
-              </div>
-              <div>
-                <div class="h3 mb-1">How do I get notified of new Tabler versions?</div>
-                <div class="text-muted">You may watch the releases on GitHub or follow me on Twitter.</div>
-              </div>
-              <div>
-                <div class="h3 mb-1">Can Tabler be used with WordPress?</div>
-                <div class="text-muted">
-                  Tabler is an HTML template that can be used for any purpose. However, it is not made to be easily installed on WordPress. It will require some
-                  effort and enough knowledge of the WordPress script to do so.
-                </div>
-              </div>
-            </div>
-            <div class="mt-5">
-              <a class="btn" href="#">Read more questions</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="py-3">
@@ -1513,122 +1109,111 @@
                     </li>
                   </ul>
                 </div>
+
+
+                <div class="col-md">
+                  <div class="subheader mb-3">Follow us on</div>
+
+                  <ul class="list-inline mb-0 mt-3">
+                    <li class="list-inline-item">
+                      <a class="btn btn-icon btn-facebook" href="#">
+                        <!-- Download SVG icon from http://tabler.io/icons/icon/brand-facebook -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-1"
+                        >
+                          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-icon btn-instagram" href="#">
+                        <!-- Download SVG icon from http://tabler.io/icons/icon/brand-instagram -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-1"
+                        >
+                          <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                          <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                          <path d="M16.5 7.5v.01" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-icon btn-twitter" href="#">
+                        <!-- Download SVG icon from http://tabler.io/icons/icon/brand-twitter -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-1"
+                        >
+                          <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-icon btn-linkedin" href="#">
+                        <!-- Download SVG icon from http://tabler.io/icons/icon/brand-linkedin -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-1"
+                        >
+                          <path d="M8 11v5" />
+                          <path d="M8 8v.01" />
+                          <path d="M12 16v-5" />
+                          <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+                          <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+
+
+
+
+
               </div>
             </div>
-            <div class="col-lg-4 ml-auto">
-              <div class="text-muted">
-                Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!
-              </div>
-            </div>
+
           </div>
-          <div class="row g-4 justify-content-between mt-0 mt-md-2">
-            <div class="col-sm-7 col-md-6 col-lg-4">
-              <h5 class="subheader">Payment &amp; Security</h5>
-              <ul class="list-inline mb-0 mt-3">
-                <li class="list-inline-item">
-                  <a href="#"><span class="payment payment-1 payment-provider-paypal"></span> </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="payment payment-1 payment-provider-visa"></span> </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="payment payment-1 payment-provider-mastercard"></span> </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="payment payment-1 payment-provider-americanexpress"></span> </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
-              <h5 class="subheader">Follow us on</h5>
-              <ul class="list-inline mb-0 mt-3">
-                <li class="list-inline-item">
-                  <a class="btn btn-icon btn-facebook" href="#">
-                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-facebook -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-1"
-                    >
-                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-icon btn-instagram" href="#">
-                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-instagram -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-1"
-                    >
-                      <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                      <path d="M16.5 7.5v.01" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-icon btn-twitter" href="#">
-                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-twitter -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-1"
-                    >
-                      <path
-                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-icon btn-linkedin" href="#">
-                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-linkedin -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-1"
-                    >
-                      <path d="M8 11v5" />
-                      <path d="M8 8v.01" />
-                      <path d="M12 16v-5" />
-                      <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-                      <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+
         </div>
       </div>
     </footer>
@@ -1668,7 +1253,7 @@
               >
                 <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
               </svg>
-              in Poland.
+              in Canada.
             </div>
           </div>
         </div>
