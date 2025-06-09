@@ -40,11 +40,10 @@ def inject_now():
 
 
 
-# ✅ Homepage
+
 @app.route("/")
-def landing_page():
-    return render_template("hero.html")
-    #return render_template("index.html")
+def home():
+    return render_template("index_new.html")
 
 
 
@@ -66,6 +65,9 @@ def start_checkout():
     }
 
     return redirect(url_for("create_checkout_session"))
+
+
+
 
 # ✅ Stripe session
 @app.route("/create-checkout-session", methods=["GET", "POST"])
@@ -92,7 +94,7 @@ def create_checkout_session():
         }],
         mode="payment",
         success_url=url_for("deployment_in_progress", _external=True),
-        cancel_url=url_for("landing_page", _external=True) + "?cancelled=true",
+        cancel_url=url_for("home", _external=True) + "?cancelled=true",
         metadata={
             "app_name": info.get("app_name", ""),
             "admin_email": info.get("admin_email", ""),
@@ -101,6 +103,12 @@ def create_checkout_session():
     )
 
     return redirect(session_obj.url, code=303)
+
+
+
+
+
+
 
 # ✅ Deployment progress page
 @app.route("/deployment-in-progress")
