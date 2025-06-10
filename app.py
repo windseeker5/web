@@ -39,8 +39,7 @@ def inject_now():
 
 @app.route("/")
 def home():
-    #return render_template("index_new.html")
-    return render_template("index_fixed_modal_working.html")
+    return render_template("index_refactored.html")
 
 
 
