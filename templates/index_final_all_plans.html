@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Fastland- Landing Page Template for SaaS, Startup &amp; Agency
+  </title>
+  <link href="{{ url_for('static', filename='image/png/favicon.png') }}" rel="shortcut icon" type="image/x-icon"/>
+  <!-- Bootstrap , fonts & icons  -->
+  <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='fonts/icon-font/css/style.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='fonts/typography-font/typo.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='fonts/fontawesome-5/css/all.css') }}" rel="stylesheet"/>
+  <!-- Plugin'stylesheets  -->
+  <link href="{{ url_for('static', filename='plugins/aos/aos.min.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='plugins/fancybox/jquery.fancybox.min.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='plugins/nice-select/nice-select.min.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='plugins/slick/slick.min.css') }}" rel="stylesheet"/>
+  <!-- Vendor stylesheets  -->
+  <link href="{{ url_for('static', filename='plugins/theme-mode-switcher/switcher-panel.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"/>
+  <!-- Custom stylesheet -->
+ </head>
+ <body data-theme="light" data-theme-mode-panel-active="">
+  <div class="site-wrapper overflow-hidden">
+   <div id="loading">
+    <img alt="" src="{{ url_for('static', filename='image/preloader.gif') }}"/>
+   </div>
+   <!-- Clean The Code And Hop in -->
+   <!-- Header Area -->
+   <!-- Preloader -->
+   <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+   <!-- Header Area -->
+   <header class="site-header site-header--menu-right menu-block-5 dynamic-sticky-bg mt-3 mt-lg-0 site-header--absolute site-header--sticky">
+    <div class="container">
+     <nav class="navbar site-navbar">
+      <!-- Brand Logo-->
+      <div class="brand-logo">
+       <a href="https://finestwp.co/home-marketing.html">
+        <!-- light version logo (logo must be black)-->
+        <img alt="" class="light-version-logo" src="{{ url_for('static', filename='image/png/logo-dark.png') }}"/>
+        <!-- Dark version logo (logo must be White)-->
+        <img alt="" class="dark-version-logo" src="{{ url_for('static', filename='image/png/logo-white.png') }}"/>
+       </a>
+      </div>
+      <div class="menu-block-wrapper ms-4">
+       <div class="menu-overlay">
+       </div>
+       <nav class="menu-block" id="append-menu-header">
+        <div class="mobile-menu-head">
+         <div class="go-back">
+          <i class="fa fa-angle-left">
+          </i>
+         </div>
+         <div class="current-menu-title">
+         </div>
+         <div class="mobile-menu-close">
+          ×
+         </div>
+        </div>
+        <ul class="site-menu-main">
+         <li class="nav-item nav-item-has-children">
+          <a class="nav-link-item drop-trigger" href="home-app.html#">
+           Home
+           <i class="fas fa-angle-down">
+           </i>
+          </a>
+          <ul class="sub-menu" id="submenu-1">
+           <li class="sub-menu--item">
+            <a href="home-marketing.html">
+             Marketing
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-project-management.html">
+             Project Management
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-it-services.html">
+             IT Services
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-services.html">
+             Services
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-agency.html">
+             Agency
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-digital-agency.html">
+             Digital Agency
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-app.html">
+             App Presenting
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="home-startup.html">
+             Startup
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="nav-item nav-item-has-children">
+          <a class="nav-link-item drop-trigger" href="home-app.html#">
+           Pages
+           <i class="fas fa-angle-down">
+           </i>
+          </a>
+          <ul class="sub-menu" id="submenu-2">
+           <li class="sub-menu--item">
+            <a href="about-us.html">
+             About Us
+            </a>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Blog
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-3">
+             <li class="sub-menu--item">
+              <a href="blogs.html">
+               Blog
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="blog-details.html">
+               Blog Details
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="blog-left-sidebar.html">
+               Blog Left Sidebar
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="blog-right-sidebar.html">
+               Blog Right Sidebar
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Careers
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-4">
+             <li class="sub-menu--item">
+              <a href="career.html">
+               Careers
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="career-details.html">
+               Carreer Details
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Pricing
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-5">
+             <li class="sub-menu--item">
+              <a href="pricing-1.html">
+               Pricing-01
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="pricing-2.html">
+               Pricing-02
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Account
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-7">
+             <li class="sub-menu--item">
+              <a href="sign-in.html">
+               Sign In
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="sign-up.html">
+               Sign Up
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="reset-password.html">
+               Reset Password
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Utility
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-8">
+             <li class="sub-menu--item">
+              <a href="faq.html">
+               FAQ
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="terms-page.html">
+               Terms &amp; Conditions
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="404.html">
+               404 Error
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="coming-soon.html">
+               Coming Soon
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="testimonial-1.html">
+               Testimonial One
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="testimonial-2.html">
+               Testimonial Two
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="sub-menu--item nav-item-has-children">
+            <a class="drop-trigger" data-menu-get="h3" href="home-app.html#">
+             Contact
+             <i class="fas fa-angle-right">
+             </i>
+            </a>
+            <ul class="sub-menu" id="submenu-9">
+             <li class="sub-menu--item">
+              <a href="contact-1.html">
+               Contact One
+              </a>
+             </li>
+             <li class="sub-menu--item">
+              <a href="contact-2.html">
+               Contact Two
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li class="nav-item nav-item-has-children has-megamenu">
+          <a class="nav-link-item drop-trigger" href="home-app.html#">
+           Portfolios
+           <i class="fas fa-angle-down">
+           </i>
+          </a>
+          <div class="sub-menu megamenu megadropdown-center d-lg-flex" id="submenu-100">
+           <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
+            <li class="col-lg-3">
+             <div class="single-dropdown-block">
+              <h3>
+               Gallery Style
+              </h3>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-2-container.html">
+               Two Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-3-container.html">
+               Three Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-4-container.html">
+               Four Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-2-container-fluid.html">
+               Two Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-3-container-fluid.html">
+               Three Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-4-container-fluid.html">
+               Four Column Wide
+              </a>
+             </div>
+            </li>
+            <li class="col-lg-3">
+             <div class="single-dropdown-block">
+              <h3>
+               Gallery (No Gap)
+              </h3>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-2-no-gap.html">
+               Two Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-3-no-gap.html">
+               Three Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-4-no-gap.html">
+               Four Column Grid
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-2-no-gap-full.html">
+               Two Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-3-no-gap-full.html">
+               Three Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-grid-4-no-gap-full.html">
+               Four Column Wide
+              </a>
+             </div>
+            </li>
+            <li class="col-lg-3">
+             <div class="single-dropdown-block">
+              <h3>
+               Masonry Style
+              </h3>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-2-no-gap.html">
+               Two Column Masonary
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-3-no-gap.html">
+               Three Column Masonary
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-4-no-gap.html">
+               Four Column Masonary
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-2-no-gap-full.html">
+               Two Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-3-no-gap-full.html">
+               Three Column Wide
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-masonary-4-no-gap-full.html">
+               Four Column Wide
+              </a>
+             </div>
+            </li>
+            <li class="col-lg-3">
+             <div class="single-dropdown-block">
+              <h3>
+               Portfolio Details
+              </h3>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-details-1.html">
+               Portfolio Details 1
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-details-2.html">
+               Portfolio Details 2
+              </a>
+              <a class="mega-drop-menu-item sub-menu--item" href="portfolio-details-3.html">
+               Portfolio Details 3
+              </a>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li class="nav-item nav-item-has-children">
+          <a class="nav-link-item drop-trigger" href="home-app.html#">
+           Blogs
+           <i class="fas fa-angle-down">
+           </i>
+          </a>
+          <ul class="sub-menu" id="submenu-10">
+           <li class="sub-menu--item">
+            <a href="blogs.html">
+             Blog Reguler
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="blog-left-sidebar.html">
+             Blog Left Sidebar
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="blog-right-sidebar.html">
+             Blog Right Sidebar
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="nav-item nav-item-has-children">
+          <a class="nav-link-item drop-trigger" href="home-app.html#">
+           Contact
+           <i class="fas fa-angle-down">
+           </i>
+          </a>
+          <ul class="sub-menu" id="submenu-11">
+           <li class="sub-menu--item">
+            <a href="contact-1.html">
+             Contact One
+            </a>
+           </li>
+           <li class="sub-menu--item">
+            <a href="contact-2.html">
+             Contact Two
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </nav>
+      </div>
+      <div class="header-btn">
+       <a class="btn btn btn-niagara btn--medium-4 h-45 rounded-50 text-white shadow--niagara-3 ms-auto ms-lg-4 d-none d-sm-flex" href="home-app.html#">
+        Free SEO Analysis
+       </a>
+      </div>
+      <!-- mobile menu trigger -->
+      <div class="mobile-menu-trigger">
+       <span>
+       </span>
+      </div>
+      <!--/.Mobile Menu Hamburger Ends-->
+     </nav>
+    </div>
+   </header>
+   <!-- navbar- -->
+   <!--/ .Header Area -->
+   <!-- Hero Area -->
+   <div class="welcome-area welcome-area--l8 position-relative">
+    <div class="container">
+     <div class="row align-items-center justify-content-center">
+      <!-- Welcome content Area -->
+      <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
+       <div class="welcome-content welcome-content--l8">
+        <h3 class="welcome-content--l8__sub-title text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+         Get Started
+        </h3>
+        <h1 class="welcome-content__title">
+         Stop waiting. Grow your
+         <br/>
+         <span class="text-highlight highlight-text d-inline-block">
+         </span>
+        </h1>
+        <p class="welcome-content--l8__descriptions" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
+         When, while lovely valley teems with vapour around
+                meand
+         <br class="d-none d-md-block"/>
+         meridian sun strikes the upper impenetroble.
+        </p>
+        <div class="welcome-btn-group--l8">
+         <a class="btn btn--lg-2 btn-bittersweet me-3 text-white rounded-50 me-3 popup-btn" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="true" href="https://www.youtube.com/watch?v=LWZ7iytIA6k">
+          Watch
+                  Video
+         </a>
+         <a class="btn btn--lg-2 btn-niagara rounded-50 me-3 text-white" data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-once="true" href="home-app.html#">
+          Get
+                  Started
+         </a>
+        </div>
+       </div>
+      </div>
+      <!--/ .Welcome Content Area -->
+      <!--/ .Welcome img Area -->
+      <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
+       <div class="hero-img d-flex align-items-end">
+        <div class="hero-l8-img-group d-flex align-items-end">
+         <div class="hero-l8-img-group__1">
+          <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-7/hero-l8-1.png') }}"/>
+         </div>
+         <div class="hero-l8-img-group__2">
+          <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-7/hero-l8-2.png') }}"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!--/ .Welcome img Area -->
+     </div>
+    </div>
+   </div>
+   <!--/ .Hero Area -->
+   <!-- Services Area -->
+   <div class="service-area service-area--l8 bg-default">
+    <div class="container">
+     <div class="row justify-content-center">
+      <div class="col-xl-8">
+       <!-- Section Title -->
+       <div class="section-title section-title--l8 text-center">
+        <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+         Our Services
+        </h6>
+        <h2 class="section-title__heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+         Provided Featrues
+        </h2>
+       </div>
+       <!--/ .Section Title -->
+      </div>
+     </div>
+     <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
+      <!-- Single Services -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+       <div class="card card--services-l6 text-center card-hover__bittersweet">
+        <div class="card--services-l6__icon bg-op1__bittersweet mx-auto">
+         <i class="text-bittersweet fas fa-bell">
+         </i>
+        </div>
+        <h3 class="card--services-l6__heading">
+         Team Accounts
+        </h3>
+        <p class="card--services-l6__content">
+         There are many variations and
+         <br class="d-none d-xs-block"/>
+         passages of Lorem
+        lpsum
+         <br class="d-none d-xs-block"/>
+         available for use
+        </p>
+       </div>
+      </div>
+      <!--/ .Single Services -->
+      <!-- Single Services -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+       <div class="card card--services-l6 text-center card-hover__niagara">
+        <div class="card--services-l6__icon bg-op1__niagara mx-auto">
+         <i class="text-niagara fas fa-layer-group">
+         </i>
+        </div>
+        <h3 class="card--services-l6__heading">
+         Digital Agency
+        </h3>
+        <p class="card--services-l6__content">
+         There are many variations and
+         <br class="d-none d-xs-block"/>
+         passages of Lorem
+        lpsum
+         <br class="d-none d-xs-block"/>
+         available for use
+        </p>
+       </div>
+      </div>
+      <!--/ .Single Services -->
+      <!-- Single Services -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+       <div class="card card--services-l6 text-center card-hover__coral">
+        <div class="card--services-l6__icon bg-op1__coral mx-auto">
+         <i class="text-coral fas fa-envelope">
+         </i>
+        </div>
+        <h3 class="card--services-l6__heading">
+         Email Marketing
+        </h3>
+        <p class="card--services-l6__content">
+         There are many variations and
+         <br class="d-none d-xs-block"/>
+         passages of Lorem
+        lpsum
+         <br class="d-none d-xs-block"/>
+         available for use
+        </p>
+       </div>
+      </div>
+      <!--/ .Single Services -->
+      <!-- Single Services -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
+       <div class="card card--services-l6 text-center card-hover__lavender">
+        <div class="card--services-l6__icon bg-op1__lavender mx-auto">
+         <i class="text-lavender fas fa-chart-pie">
+         </i>
+        </div>
+        <h3 class="card--services-l6__heading">
+         API Reference
+        </h3>
+        <p class="card--services-l6__content">
+         There are many variations and
+         <br class="d-none d-xs-block"/>
+         passages of Lorem
+        lpsum
+         <br class="d-none d-xs-block"/>
+         available for use
+        </p>
+       </div>
+      </div>
+      <!--/ .Single Services -->
+     </div>
+    </div>
+   </div>
+   <!--/ .Services Area -->
+   <!-- About Us Area -->
+   <div class="content-section content-section--8 bg-default-5 border-bottom border-default-color-3">
+    <div class="container">
+     <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-md-9 col-xs-10">
+       <!-- Section Title -->
+       <div class="section-title section-title--l8 mt-4 mt-md-0 text-center">
+        <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+         About Lupinus Group
+        </h6>
+        <h2 class="section-title__heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+         Innovative Building With New Materials
+        </h2>
+       </div>
+       <!--/ .Section Title -->
+      </div>
+     </div>
+     <div class="row align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
+       <div class="widget widget--about widgets-align-right">
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-layer-group">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Optimal Choice
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-chart-pie">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Financial advice
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-cog">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Innovative solutions
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+       </div>
+      </div>
+      <div class="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+       <div class="content-img content-img--l7-group-img text-center">
+        <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-7/about-mobile-img.png') }}"/>
+        <div class="shape">
+         <img alt="" src="{{ url_for('static', filename='image/home-7/green-shape.png') }}"/>
+        </div>
+       </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+       <div class="widget widget--about">
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-bookmark">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Optimal Choice
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-headphones">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Business strategy
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+        <!-- Single Services -->
+        <div class="widgets widgets--about-l6 d-flex">
+         <div class="widgets__icon">
+          <i class="fa fa-bell">
+          </i>
+         </div>
+         <div class="widgets__content">
+          <h5 class="widgets__title">
+           Marketing outline
+          </h5>
+          <p class="widgets__text">
+           The White iphone smartphone mockup counterclockwise
+          </p>
+         </div>
+        </div>
+        <!--/ .Single Services -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/ .About Us Area -->
+   <!-- Content One Area -->
+   <div class="content-section content-section--l8-2 bg-default-5 border-bottom boder-default-color">
+    <div class="container">
+     <div class="row align-items-center justify-content-center">
+      <!-- about-us Content -->
+      <div class="col-xxl-6 col-lg-7 col-md-9 col-xs-10 order-2 orde-lg-1">
+       <div class="about-us-right mt-4 mt-lg-0">
+        <div class="section-title section-title--l8">
+         <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+          About Lupinus Group
+         </h6>
+         <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+          Present your app in a beautiful and elegant way.
+         </h2>
+         <p class="section-title__description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
+          White iPhone Mockup Templates. A collection of three mockups showing
+          <br class="d-none d-xl-block"/>
+          an iPhone on a dark leather seat. High resolution PSD files, each coming
+          <br class="d-none d-xl-block"/>
+          with a smart object.
+         </p>
+        </div>
+       </div>
+       <div class="widgets widgets-content--l8" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
+        <div class="row justify-content-center">
+         <div class="col-lg-6 col-xs-6">
+          <div class="widget widget--content-l6">
+           <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
+            <i class="far fa-envelope">
+            </i>
+           </div>
+           <h4 class="widget--content-l6__title">
+            Minimal Design
+           </h4>
+           <p class="widget--content-l6__text">
+            Generate Lorem Ipsum place holder
+            <br class="d-none d-xl-block"/>
+            text for use in your Explore
+           </p>
+          </div>
+         </div>
+         <div class="col-lg-6 col-xs-6">
+          <div class="widget widget--content-l6">
+           <div class="widget--content-l6__circle bg-niagara shadow--niagara dark-mode-texts text-white">
+            <i class="fa fa-layer-group">
+            </i>
+           </div>
+           <h4 class="widget--content-l6__title">
+            Best Material
+           </h4>
+           <p class="widget--content-l6__text">
+            Generate Lorem Ipsum place holder
+            <br class="d-none d-xl-block"/>
+            text for use in your Explore
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!--/ .about-us Content -->
+      <div class="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2">
+       <div class="content-img mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+        <img alt="" class="w-100" data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="{{ url_for('static', filename='image/home-7/content-mobile-img.png') }}"/>
+        <div class="shape">
+         <img alt="" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" data-aos-once="true" src="{{ url_for('static', filename='image/home-7/red-shape.png') }}"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/ .Content One Area -->
+   <!-- Pricing Table Area -->
+   <!--/ .Pricing Table Area -->
+   <!-- Testimonial Area -->
+   <div class="table-section table-section--l6 table-section--l8 bg-default-5 border-bottom border-default-color-3">
+    <div class="container">
+     <div class="table-section-top">
+      ...
+     </div>
+     <div class="row justify-content-center" data-pricing-dynamic="" data-value-active="monthly" id="table-price-value">
+      ...
+     </div>
+    </div>
+   </div>
+   <div class="testimonial-section testimonial-section--l8 bg-default-5">
+    <div class="container">
+     <div class="row align-items-center">
+      <div class="col-lg-8 col-xl-9 col-xxl-7">
+       <div class="section-title section-title--l8 text-center text-lg-start">
+        <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+         Testimonial
+        </h6>
+        <h2 class="section-title__heading mb-0" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+         Don’t Just Take Our Words For It
+        </h2>
+       </div>
+      </div>
+      <div class="col-xxl-5 col-xl-3 col-lg-4 text-center text-lg-end">
+       <div class="testimonial-btn mb-6 mb-lg-0">
+       </div>
+      </div>
+     </div>
+     <div class="row justify-content-center testimonial-slider--l8" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
+      <div class="col-lg-4 col-md-12">
+       <div class="card card-testimonial--l4">
+        <div class="card-body">
+         <div class="card-body__top d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-wrap align-items-center">
+           <div class="card-image">
+            <img alt="" src="{{ url_for('static', filename='image/home-4/user-img-1.png') }}"/>
+           </div>
+           <div class="card-body__user mr-3">
+            <h3 class="card-title">
+             Charles Patterson
+            </h3>
+            <p class="card-text--ext">
+             One year with us
+            </p>
+           </div>
+          </div>
+          <div class="card-icon">
+           <i class="fa fa-quote-left">
+           </i>
+          </div>
+         </div>
+         <p class="card-description">
+          consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+       <div class="card card-testimonial--l4">
+        <div class="card-body">
+         <div class="card-body__top d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-wrap align-items-center">
+           <div class="card-image">
+            <img alt="" src="{{ url_for('static', filename='image/home-3/user-circle-1.png') }}"/>
+           </div>
+           <div class="card-body__user mr-3">
+            <h3 class="card-title">
+             John Doe
+            </h3>
+            <p class="card-text--ext">
+             One year with us
+            </p>
+           </div>
+          </div>
+          <div class="card-icon">
+           <i class="fa fa-quote-left">
+           </i>
+          </div>
+         </div>
+         <p class="card-description">
+          consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+       <div class="card card-testimonial--l4">
+        <div class="card-body">
+         <div class="card-body__top d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-wrap align-items-center">
+           <div class="card-image">
+            <img alt="" src="{{ url_for('static', filename='image/home-3/user-circle-2.png') }}"/>
+           </div>
+           <div class="card-body__user mr-3">
+            <h3 class="card-title">
+             Tiana Dokidis
+            </h3>
+            <p class="card-text--ext">
+             One year with us
+            </p>
+           </div>
+          </div>
+          <div class="card-icon">
+           <i class="fa fa-quote-left">
+           </i>
+          </div>
+         </div>
+         <p class="card-description">
+          consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+       <div class="card card-testimonial--l4">
+        <div class="card-body">
+         <div class="card-body__top d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-wrap align-items-center">
+           <div class="card-image">
+            <img alt="" src="{{ url_for('static', filename='image/home-3/user-circle-3.png') }}"/>
+           </div>
+           <div class="card-body__user mr-3">
+            <h3 class="card-title">
+             Tiana Dokidis
+            </h3>
+            <p class="card-text--ext">
+             One year with us
+            </p>
+           </div>
+          </div>
+          <div class="card-icon">
+           <i class="fa fa-quote-left">
+           </i>
+          </div>
+         </div>
+         <p class="card-description">
+          consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+       <div class="card card-testimonial--l4">
+        <div class="card-body">
+         <div class="card-body__top d-flex align-items-center justify-content-between">
+          <div class="d-flex flex-wrap align-items-center">
+           <div class="card-image">
+            <img alt="" src="{{ url_for('static', filename='image/home-3/user-circle-1.png') }}"/>
+           </div>
+           <div class="card-body__user mr-3">
+            <h3 class="card-title">
+             Talan Bergson
+            </h3>
+            <p class="card-text--ext">
+             CEO, Greener
+            </p>
+           </div>
+          </div>
+          <div class="card-icon">
+           <i class="fa fa-quote-left">
+           </i>
+          </div>
+         </div>
+         <p class="card-description">
+          consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/ .Testimonial Area -->
+   <!-- promo Area -->
+   <!--/ .promo Area -->
+   <!-- CTA Area -->
+   <!--/ .CTA Area -->
+   <!-- Footer Area -->
+   <footer class="footer-section footer-section--l3 position-relative bg-default">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-4 col-md-7 col-xs-9">
+       <div class="footer-brand-block footer-brand-block--l3 mb-7 mb-lg-5">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+         <a href="home-it-services.html#">
+          <!-- light version logo (logo must be black)-->
+          <img alt="" class="light-version-logo" src="{{ url_for('static', filename='image/png/logo-dark.png') }}"/>
+          <!-- Dark version logo (logo must be White)-->
+          <img alt="" class="dark-version-logo" src="{{ url_for('static', filename='image/png/logo-white.png') }}"/>
+         </a>
+        </div>
+        <p class="footer-brand-block--l3__text">
+         There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+        </p>
+        <div class="newsletter-form newsletter-form--rounded">
+         <form action="https://finestwp.co/">
+          <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
+           <input class="form-control" placeholder="Subscribe Our newsletter" required="" type="email"/>
+           <button class="btn-icon" type="submit">
+            <i class="fas fa-long-arrow-alt-right">
+            </i>
+           </button>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-8">
+       <div class="row">
+        <div class="col-xxl-4 col-xl-5 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+         <div class="footer-list-block footer-list-block--2 mb-5">
+          <h4 class="footer-block-title">
+           Contact
+          </h4>
+          <ul class="footer-widgets__list footer-widgets__list--l3 footer-widgets__list--l3__address">
+           <li>
+            Patricia C. Amedee 4401 Waldeck New Street
+           </li>
+           <li>
+            info@yourdomain.com
+           </li>
+           <li>
+            +99 (0) 101 0000 888
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+         <div class="footer-list-block footer-list-block--3 mb-5">
+          <h4 class="footer-block-title">
+           Quick Links
+          </h4>
+          <ul class="footer-widgets__list footer-widgets__list--l3">
+           <li>
+            <a href="home-it-services.html#">
+             Home
+            </a>
+           </li>
+           <li>
+            <a href="home-it-services.html#">
+             About
+            </a>
+           </li>
+           <li>
+            <a href="home-it-services.html#">
+             Contact
+            </a>
+           </li>
+           <li>
+            <a href="home-it-services.html#">
+             Blog
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="offset-xxl-1 col-xl-4 col-lg-5 col-md-4 col-xs-8">
+         <div class="footer-widget footer-widget--l3 mb-5">
+          <h4 class="footer-block-title">
+           Instagram
+          </h4>
+          <div class="footer-insta-gallery row">
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-1.png') }}"/>
+           </div>
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-2.png') }}"/>
+           </div>
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-3.png') }}"/>
+           </div>
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-4.png') }}"/>
+           </div>
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-5.png') }}"/>
+           </div>
+           <div class="col-4">
+            <img alt="" class="w-100" src="{{ url_for('static', filename='image/home-3/insta-6.png') }}"/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="copyright-block copyright-block--l3">
+      <div class="row text-center align-items-center">
+       <div class="col-xs-6 text-sm-start">
+        <p class="copyright-text--l3">
+         © 2021 Fastland Web Ui Template
+        </p>
+       </div>
+       <div class="col-xs-6 text-sm-end">
+        <ul class="footer-social-share footer-social-share--rounded">
+         <li>
+          <a href="home-it-services.html#">
+           <i class="fab fa-facebook-square">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="home-it-services.html#">
+           <i class="fab fa-twitter">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="home-it-services.html#">
+           <i class="fab fa-instagram">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="home-it-services.html#">
+           <i class="fab fa-linkedin">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+   <!--/ .Footer Area -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/jquery/jquery-migrate.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/fancybox/jquery.fancybox.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/nice-select/jquery.nice-select.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/aos/aos.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/counter-up/jquery.counterup.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/counter-up/waypoints.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/slick/slick.min.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/skill-bar/skill.bars.jquery.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/isotope/isotope.pkgd.min.js') }}">
+  </script>
+  <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+  <!-- Activation Script -->
+  <script src="{{ url_for('static', filename='js/menu.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}">
+  </script>
+  <script src="{{ url_for('static', filename='plugins/type-js/typed.min.js') }}">
+  </script>
+  <script>
+   var typed = new Typed('.highlight-text', {
+    strings: ["Minipass.", "subscription.", "deployment."],
+    typeSpeed: 80,
+    backSpeed: 80,
+    cursorChar: '',
+    shuffle: true,
+    smartBackspace: false,
+    loop: true
+  });
+  </script>
+ </body>
+</html>
