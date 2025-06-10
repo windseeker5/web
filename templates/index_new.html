@@ -50,9 +50,9 @@
 <div class="brand-logo">
 <a href="/home-marketing.html">
 <!-- light version logo (logo must be black)-->
-<img alt="" class="light-version-logo" src="{{ url_for('static', filename='image/minipass_logo.png') }}" style="max-height: 25px;"/>
+<img alt="" class="light-version-logo" src="{{ url_for('static', filename='image/minipass_logo.png') }}" style="max-height: 20px;"/>
 <!-- Dark version logo (logo must be White)-->
-<img alt="" class="dark-version-logo" src="{{ url_for('static', filename='image/minipass_logo.png') }}" style="max-height: 25px;"/>
+<img alt="" class="dark-version-logo" src="{{ url_for('static', filename='image/minipass_logo.png') }}" style="max-height: 20px;"/>
 </a>
 </div>
 <div class="menu-block-wrapper ms-4">
@@ -889,7 +889,6 @@
 
 
 
-
 <!-- 🔒 Modal for collecting setup info -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -901,18 +900,22 @@
       <div class="modal-body">
         <input type="hidden" name="plan" id="modal-plan">
 
+        <!-- 🧠 Subdomain Input -->
         <div class="mb-3">
-          <label class="form-label">App Name (e.g. myclub)</label>
-          <input type="text" name="app_name" class="form-control" required>
+          <label class="form-label">App Name (subdomain)</label>
+          <input type="text" name="app_name" id="app_name" class="form-control" required>
+          <small id="subdomain-feedback" class="form-text text-muted"></small>
         </div>
 
+        <!-- 📧 Admin Email -->
         <div class="mb-3">
           <label class="form-label">Admin Email</label>
           <input type="email" name="admin_email" class="form-control" required>
         </div>
       </div>
+
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Proceed to Checkout</button>
+        <button type="submit" class="btn btn-primary" id="submit-btn">Proceed to Checkout</button>
         <button type="button" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
       </div>
     </form>
@@ -926,7 +929,54 @@
     const modal = new bootstrap.Modal(document.getElementById('signupModal'));
     modal.show();
   }
+
+  // ✅ Subdomain validation logic
+  document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById("app_name");
+    const feedback = document.getElementById("subdomain-feedback");
+    const submit = document.getElementById("submit-btn");
+
+    input.addEventListener("input", function () {
+      const subdomain = input.value.trim().toLowerCase();
+
+      if (subdomain.length < 3 || !/^[a-z0-9]+$/.test(subdomain)) {
+        feedback.textContent = "Subdomain must be at least 3 lowercase letters/numbers.";
+        feedback.classList.add("text-danger");
+        feedback.classList.remove("text-success");
+        submit.disabled = true;
+        return;
+      }
+
+      fetch("/check-subdomain", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subdomain: subdomain })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.available) {
+          feedback.textContent = "✅ Subdomain is available";
+          feedback.classList.remove("text-danger");
+          feedback.classList.add("text-success");
+          submit.disabled = false;
+        } else {
+          feedback.textContent = `❌ ${data.error || "Subdomain is taken"}`;
+          feedback.classList.add("text-danger");
+          feedback.classList.remove("text-success");
+          submit.disabled = true;
+        }
+      })
+      .catch(() => {
+        feedback.textContent = "⚠️ Error checking subdomain";
+        feedback.classList.add("text-danger");
+        submit.disabled = true;
+      });
+    });
+  });
 </script>
+
+
+
 
 </body>
 </html>

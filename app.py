@@ -14,12 +14,8 @@ from utils.mail import mail
 import subprocess
 
 
-
-
-# ✅ Load environment variables
+ 
 load_dotenv()
-
-# ✅ Initialize Flask app
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "fallback123")
 
@@ -44,6 +40,25 @@ def inject_now():
 @app.route("/")
 def home():
     return render_template("index_new.html")
+
+
+
+
+@app.route("/check-subdomain", methods=["POST"])
+def check_subdomain():
+    data = request.get_json()
+    name = data.get("subdomain", "").strip().lower()
+
+    from utils.customer_helpers import init_customers_db, subdomain_taken
+    init_customers_db()
+
+    if not name or not name.isalnum():
+        return {"available": False, "error": "Invalid subdomain"}, 200
+
+    if subdomain_taken(name):
+        return {"available": False, "error": "Subdomain already taken"}, 200
+
+    return {"available": True}, 200
 
 
 
@@ -121,10 +136,14 @@ def deployment_in_progress():
 # ✅ Webhook listener
 @app.route("/webhook", methods=["POST"])
 def stripe_webhook():
-    import subprocess  # ✅ Ensure subprocess is imported
-    from utils.email_helpers import send_support_error_email, send_user_deployment_email
-    from shutil import copytree
+    import stripe
     import os
+    from utils.customer_helpers import (
+        init_customers_db, subdomain_taken,
+        get_next_available_port, insert_customer
+    )
+    from utils.deploy_helpers import insert_admin_user, deploy_customer_container
+    from utils.email_helpers import send_user_deployment_email, send_support_error_email
 
     payload = request.data
     sig_header = request.headers.get("stripe-signature")
@@ -140,42 +159,34 @@ def stripe_webhook():
     if event["type"] == "checkout.session.completed":
         session_data = event["data"]["object"]
         metadata = session_data.get("metadata", {})
-        app_name = metadata.get("app_name")
+
+        app_name = metadata.get("app_name", "").strip().lower()
         admin_email = metadata.get("admin_email")
         admin_password = metadata.get("admin_password")
+        plan_key = metadata.get("plan", "basic").lower()
 
         print(f"✅ Payment confirmed for: {app_name}")
-        print(f"🚀 Triggering container setup for {admin_email}")
+        print(f"🚀 Triggering container setup for {admin_email} with plan: {plan_key}")
 
         try:
-            # 🔧 Copy app source
-            base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-            project_dir = os.path.join(base_path, "deployed", app_name)
-            app_src = os.path.join(base_path, "app")
-            app_dst = os.path.join(project_dir, "app")
+            # 🧠 Init DB and recheck subdomain (safety)
+            init_customers_db()
+            if subdomain_taken(app_name):
+                raise ValueError("Subdomain already taken")
 
-            def ignore_git(dir, contents):
-                return ['.git'] if '.git' in contents else []
+            # 🔢 Assign port + insert into customers.db
+            port = get_next_available_port()
+            insert_customer(admin_email, app_name, app_name, plan_key, admin_password, port)
 
-            copytree(app_src, app_dst, dirs_exist_ok=True, ignore=ignore_git)
-            print(f"📦 App copied to {app_dst}")
+            # 🐳 Deploy container
+            success = deploy_customer_container(app_name, admin_email, admin_password, plan_key, port)
 
-            # ❗ We DO NOT modify the SQLite DB here
-
-            # ✅ Use full path to the script in /minipass_env/scripts/
-            script_path = os.path.join(base_path, "scripts", "deploy_container.sh")
-            result = subprocess.run(
-                ["bash", script_path, app_name, admin_email, admin_password],
-                capture_output=True, text=True, check=True
-            )
-
-            # ✅ Basic verification of output
-            if "minipass_" in result.stdout or "App deployed" in result.stdout:
-                print("✅ Deployment successful")
+            if success:
                 app_url = f"https://{app_name}.minipass.me"
                 send_user_deployment_email(admin_email, app_url, admin_password)
+                print(f"✅ Deployment successful for {app_name}")
             else:
-                raise RuntimeError("Container deployment did not return expected output")
+                raise RuntimeError("Container failed to deploy")
 
         except Exception as e:
             print(f"❌ Deployment error: {e}")
@@ -184,7 +195,6 @@ def stripe_webhook():
             return "Deployment failed", 500
 
     return "OK", 200
-
 
 
 

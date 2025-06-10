@@ -1,19 +1,47 @@
-{% extends "base.html" %}
-{% block title %}Deployment in Progress{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="10;url=/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deployment in Progress</title>
+  <link href="{{ url_for('static', filename='css/tabler.css') }}" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lead {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+      border-width: 0.4em;
+    }
+    .text-muted {
+      color: #6c757d !important;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 We’re getting things ready...</h1>
+  <p class="lead">
+    Thank you for subscribing to <strong>MiniPass</strong>!<br>
+    We are setting up your application <strong>right now</strong>.
+  </p>
+  <p class="text-muted">
+    You’ll receive a confirmation email with your login link and credentials as soon as the setup is complete.
+  </p>
+  <div class="spinner-border text-primary mb-3" role="status"></div>
+  <p class="text-muted">This usually takes less than a minute.</p>
+</body>
+</html>
 
-{% block content %}
-<div class="page-body">
-  <div class="container-xl py-5 text-center">
-    <h1 class="display-4">🚀 We’re getting things ready...</h1>
-    <p class="lead mt-3">
-      Thank you for subscribing to <strong>MiniPass</strong>!<br>
-      We are setting up your application <strong>right now</strong>.
-    </p>
-    <p class="text-muted mb-5">
-      You’ll receive a confirmation email with your login link and credentials as soon as the setup is complete.
-    </p>
-    <div class="spinner-border text-primary mb-3" role="status"></div>
-    <p class="text-muted">This usually takes less than a minute.</p>
-  </div>
-</div>
-{% endblock %}
