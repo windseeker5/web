@@ -15,46 +15,92 @@
       border-radius: 10px;
       padding: 30px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .logo {
+      width: 240px;  /* ✅ 2x size */
+      margin-bottom: 20px;
     }
     h1 {
       color: #333;
+      font-size: 1.8em;
+      margin-bottom: 10px;
     }
-    .url {
-      font-size: 1.1em;
+    .url-box {
       background: #eef1f4;
-      padding: 10px;
+      padding: 15px;
       border-radius: 5px;
-      margin: 15px 0;
+      margin: 20px 0;
       font-family: monospace;
+      line-height: 1.6;
     }
-    .password {
+    .url-box a {
+      font-size: 1.5em;  /* ✅ Bigger URL */
+      text-decoration: none;
+      color: #0d6efd;
+    }
+    .highlight {
       font-weight: bold;
       color: #0d6efd;
     }
     .video {
       margin-top: 30px;
     }
+    .video img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+    .section-title::before {
+      content: "🎬";
+      margin-right: 8px;
+    }
+    p.footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>🚀 Your MiniPass App is Ready!</h1>
-    <p>Welcome aboard! Your personalized MiniPass app is now live and ready to use.</p>
+    <!-- ✅ Larger welcome icon -->
+    <img class="logo" src="cid:welcome-icon.png" alt="Welcome" />
 
-    <div class="url">{{ url }}</div>
-    <p>Your admin password is: <span class="password">{{ password }}</span></p>
+    <h1>🚀 Your minipass app is ready!</h1>
+    <p>Welcome aboard! Your personalized minipass app is now live and ready to use.</p>
 
-    <p>👉 You can now log in and start managing your activities, passes, and customers!</p>
+    <!-- ✅ Combined grey box with larger URL and no label -->
+    <div class="url-box">
+      <a href="{{ url }}">{{ url }}</a><br>
+      Admin user: <span class="highlight">{{ user_email }}</span><br>
+      Admin password: <span class="highlight">{{ password }}</span>
+    </div>
+
+    <p>👉 To log in, open your app link above and sign in using your admin email address and the password provided.</p>
+
+    <h1>🎬 Getting Started Guide</h1>
 
     <div class="video">
-      <h3>🎬 Getting Started Guide</h3>
       <p>Watch this short video to explore the basics:</p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" width="100%" style="border-radius: 8px;" />
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail" />
       </a>
     </div>
 
-    <p style="margin-top: 40px; font-size: 0.9em; color: #888;">Questions? Reply to this email or visit our Help Center.</p>
+    <p class="footer">Questions? Reply to this email or visit our Help Center.</p>
   </div>
+
+  
 </body>
 </html>

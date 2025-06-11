@@ -19,11 +19,40 @@ def init_mail(app):
     app.config['MAIL_DEFAULT_SENDER'] = os.getenv("MAIL_DEFAULT_SENDER", "info@minipass.me")
     mail.init_app(app)
 
+
+
+
 def send_user_deployment_email(to, url, password):
-    subject = "🎉 Your MiniPass app is live!"
-    html = render_template("emails/deployment_ready.html", url=url, password=password)
-    msg = Message(subject, recipients=[to], html=html, body=f"Your app is live: {url}\nPassword: {password}")
+    subject = "🎉 Your minipass app is live!"  # ✅ Lowercase "minipass"
+    
+    # ✅ Render with admin email included
+    html = render_template(
+        "emails/deployment_ready.html",
+        url=url,
+        password=password,
+        user_email=to
+    )
+
+    msg = Message(
+        subject,
+        recipients=[to],
+        html=html,
+        body=f"Your app is live: {url}\nAdmin Email: {to}\nPassword: {password}"
+    )
+
+    # ✅ Attach welcome-icon.png as inline image (fixed header format)
+    icon_path = os.path.join("static", "image", "welcome-icon.png")
+    with open(icon_path, "rb") as f:
+        msg.attach(
+            filename="welcome-icon.png",
+            content_type="image/png",
+            data=f.read(),
+            disposition="inline",
+            headers={"Content-ID": "<welcome-icon.png>"}  # ✅ THIS LINE FIXED
+        )
+
     mail.send(msg)
+
 
 
 

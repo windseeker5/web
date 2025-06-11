@@ -1,47 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="10;url=/" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deployment in Progress</title>
-  <link href="{{ url_for('static', filename='css/tabler.css') }}" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f9fafb;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .lead {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    .spinner-border {
-      width: 3rem;
-      height: 3rem;
-      border-width: 0.4em;
-    }
-    .text-muted {
-      color: #6c757d !important;
-    }
-  </style>
-</head>
-<body>
-  <h1>🚀 We’re getting things ready...</h1>
-  <p class="lead">
-    Thank you for subscribing to <strong>MiniPass</strong>!<br>
-    We are setting up your application <strong>right now</strong>.
-  </p>
-  <p class="text-muted">
-    You’ll receive a confirmation email with your login link and credentials as soon as the setup is complete.
-  </p>
-  <div class="spinner-border text-primary mb-3" role="status"></div>
-  <p class="text-muted">This usually takes less than a minute.</p>
-</body>
-</html>
+{% extends "base.html" %}
 
+{% block content %}
+<meta http-equiv="refresh" content="10;url=/" />
+
+<div class="container py-7 text-center">
+  <!-- Terminal-style black card with margin from header -->
+  <div class="mx-auto mb-5" style="
+      max-width: 560px;
+      background: #000;
+      color: #00ff99;
+      font-family: monospace;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      text-align: left;
+      font-size: 12px;
+      line-height: 1.3;
+      margin-top: 140px;
+    ">
+    Building your app...<br>
+    Installing dependencies...<br>
+    Configuring your subdomain...<br>
+    Setting up database...<br>
+    Finalizing container...<br>
+    ✅ All done!
+  </div>
+
+  <br><br>
+
+  <!-- H1 and description below the black terminal -->
+  <h1 class="fw-bold" style="font-size: 2.5rem;">🚀 We’re getting things ready...</h1>
+  <br>
+  <p class="text-muted mt-2" style="font-size: 16px;">
+    We’re currently building your MiniPass application and you’ll receive an email with your login info and documentation when it’s ready.
+  </p>
+</div>
+
+
+
+{% endblock %}
