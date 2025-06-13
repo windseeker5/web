@@ -14,6 +14,12 @@ from utils.mail import mail
 import subprocess
 
 
+import logging
+
+# ✅ Configure logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+
  
 load_dotenv()
 app = Flask(__name__)
@@ -168,6 +174,10 @@ def stripe_webhook():
         print(f"✅ Payment confirmed for: {app_name}")
         print(f"🚀 Triggering container setup for {admin_email} with plan: {plan_key}")
 
+        logging.info(f"✅ Payment confirmed for: {app_name}")
+        logging.info(f"🚀 Triggering container setup for {admin_email} with plan: {plan_key}")
+
+
         try:
             # 🧠 Init DB and recheck subdomain (safety)
             init_customers_db()
@@ -185,11 +195,15 @@ def stripe_webhook():
                 app_url = f"https://{app_name}.minipass.me"
                 send_user_deployment_email(admin_email, app_url, admin_password)
                 print(f"✅ Deployment successful for {app_name}")
+                logging.info(f"✅ Deployment successful for {app_name}")
+
             else:
                 raise RuntimeError("Container failed to deploy")
 
         except Exception as e:
             print(f"❌ Deployment error: {e}")
+            logging.error(f"❌ Deployment error: {e}")
+
             error_output = getattr(e, 'output', '') or getattr(e, 'stderr', '') or str(e)
             send_support_error_email(admin_email, app_name, error_output)
             return "Deployment failed", 500
